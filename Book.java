@@ -14,6 +14,7 @@ public class Book
   {
   title = t;
   author = a;
+  // System.out.println("Adding book " + t);
   }
 
    /*** Accessor methods ***/
@@ -31,7 +32,7 @@ public class Book
 
   public String toString()  
   {
-  String info = "\"" + title + "\", written by " + author;
+    String info = "\"" + title + "\", written by " + author;
   if (rating != 0)  
   info += ", rating is " + rating;
 
@@ -45,6 +46,7 @@ public class Book
   return false;
 
   }
+
 
   /*** Mutator methods ***/
   public void setAuthor(String a) {
@@ -61,7 +63,7 @@ public class Book
     rating += r;
 
   r = 10;
-
+  System.out.println("Adjusting rating by " + r);
   }
 
 }

@@ -5,14 +5,18 @@
  */
 public class MediaLib
 {
-  private Book book;
-  private Movie movie;
-  private Song song;
   public static String owner = "PLTW";
+  
   private static int numEntries = 0;
   private static int numBook = 0;
   private static int numMovie = 0;
   private static int numSong = 0;
+
+  private Book book;
+  private Movie movie;
+  private Song song;
+
+  
   public void addBook(Book b)
   {
     if (numBook ==0){
@@ -24,6 +28,8 @@ public class MediaLib
       System.out.println("You can only have one book in your library.");
     }
   }
+
+  
   public void addMovie(Movie m)
   {
     if (numMovie ==0){
@@ -35,6 +41,8 @@ public class MediaLib
       System.out.println("You can only have one movie in your library.");
     }
   }
+
+  
   public void addSong(Song s)
   {
     if (numSong ==0){
@@ -46,6 +54,7 @@ public class MediaLib
       System.out.println("You can only have one song in your library.");
     }
   }
+
   
   public String toString()  
   {
